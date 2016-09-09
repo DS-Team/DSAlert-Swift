@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DSTableCell" customModule="DSAlert_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jdn-dF-v29">
+                        <rect key="frame" x="12" y="4" width="35.5" height="35.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jdn-dF-v29" secondAttribute="height" multiplier="1:1" id="DCJ-ia-Zfz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试带标题的ActionSheet增加长度~~~~~~~~~~~~~~~~~~~~~~~~~!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="248.5" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-B9-z1d">
+                        <rect key="frame" x="59.5" y="0.0" width="248.5" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jdn-dF-v29" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="81t-Qk-tFF"/>
+                    <constraint firstItem="jdn-dF-v29" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="L8Y-eg-JPb"/>
+                    <constraint firstAttribute="bottom" secondItem="h8c-B9-z1d" secondAttribute="bottom" id="NVg-8Y-yr3"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h8c-B9-z1d" secondAttribute="trailing" constant="12" id="QnJ-sJ-pr3"/>
+                    <constraint firstItem="h8c-B9-z1d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RmK-G3-Ucq"/>
+                    <constraint firstItem="h8c-B9-z1d" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" priority="250" id="WH8-v1-3Wo"/>
+                    <constraint firstItem="h8c-B9-z1d" firstAttribute="leading" secondItem="jdn-dF-v29" secondAttribute="trailing" constant="12" id="bKr-57-X33"/>
+                    <constraint firstAttribute="bottom" secondItem="jdn-dF-v29" secondAttribute="bottom" constant="4" id="ggs-D5-0NW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="customImageView" destination="jdn-dF-v29" id="PYx-QU-dH9"/>
+                <outlet property="customTextLabel" destination="h8c-B9-z1d" id="qOa-Y4-Jec"/>
+            </connections>
+            <point key="canvasLocation" x="-212" y="433"/>
+        </tableViewCell>
+    </objects>
+</document>
